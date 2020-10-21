@@ -24,7 +24,7 @@ class ProfileController extends Controller
 
     public function create()
     {
-        return view('index');
+        return view('profile');
     }
 
     public function store(Request $request)
