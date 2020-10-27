@@ -1,13 +1,20 @@
 .review-main {
-  width: 70%;
+  width: 80%;
 }
 .review-image {
-  width: 30%;
+  width: 20%;
 }
 .review-image img {
   max-width: 100%;
+  max-height: 300px;
 }
 .btn-back {
   width: 10em;
   margin: auto;
+}
+.btn-wrapper {
+  width: 100%;
+  clear: both;
+  margin-bottom: 20px;
+  text-align: center;
 }
