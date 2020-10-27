@@ -25,6 +25,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/profile', 'ProfileController@create')->name('create');
     Route::post('/profile/store', 'ProfileController@store')->name('store');
 
+    Route::get('/edit', 'ProfileController@edit')->name('edit');
+    Route::post('/edit/update', 'ProfileController@update')->name('update');
+
+    Route::get('/delete', 'ProfileController@delete')->name('delete');
+    Route::post('/delete/remove', 'ProfileController@remove')->name('remove');
+
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
