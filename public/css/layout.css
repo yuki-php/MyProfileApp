@@ -1,6 +1,9 @@
 .navbar {
-  background-color: #222831;
+  background-color: #393e46;
   color: #fff;
+}
+.navbar-brand{
+  font-family: fantasy;
 }
 .navbar-logo {
   height: 60px;
@@ -10,16 +13,16 @@
   color: #fff;
 }
 .main {
-  background-color: #393e46;
+  background-color: #FFFFEE;
   min-height: 85vh;
   padding: 30px 5%;
 }
 .pagetitle {
-  color: #fff;
+  color: #808080;
   margin-bottom: 20px;
 }
 .footer {
-  background-color: #222831;
+  background-color:  #393e46;
   text-align: center;
 }
 .copyright {

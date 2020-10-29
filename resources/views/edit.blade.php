@@ -34,7 +34,7 @@
                 <input type='submit' class='btn btn-success' value='更新する'>
               </div>
           </div>
-        </form>
+      </form>
       </div>
   </div>
 @endsection
