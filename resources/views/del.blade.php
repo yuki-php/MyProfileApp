@@ -1,40 +1,35 @@
 @extends('layouts.app')
 
+@section('css')
+    <link href="{{ asset('css/show.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
+<div class="container">
   <h1 class='pagetitle'>削除ページ</h1>
-  @if (count($errors) > 0)
-          <div class="alert alert-danger">
-              <ul>
-                  @foreach ($errors->all() as $error)
-                      <li>{{ $error }}</li>
-                  @endforeach
-              </ul>
-          </div>
-  @endif
-    
-  <div class="row justify-content-center container">
-      <div class="col-md-10">
-      <form method='POST' action="{{ route('remove') }}" enctype="multipart/form-data">
-          @csrf
-          <div class="card">
-              <div class="card-body">
-                <div class="form-group">
-                  <input type='hidden' name='id' value="{{$items->id}}">
-                  <label>タイトル</label>
-                  <input type='text' class='form-control' name='title' placeholder='タイトルを入力' value="{{ $items->title }}">
-                </div>
-                <div class="form-group">
-                <label>内容</label>
-                  <textarea  class='description form-control2' name='content' placeholder='本文を入力' >{{ $items->content }}</textarea>
-                </div>
-                <div class="form-group">
-                  <label for="file1">画像のアップロード</label>
-                  <input type="file" id="file1" name='image' class="form-control-file">
-                </div>
-                <input type='submit' class='btn btn-danger' value='削除する'>
-              </div>
-          </div>
-        </form>
-      </div>
+  <div class="card">
+    <div class="card-body d-flex">
+      <section class='review-main'>
+        <h2 class='h2'>タイトル</h2>
+        <p class='h4 mb30'>{{ $items->title }}</p>
+        <h2 class='h2'>本文</h2>
+        <p>{{ $items->content }}</p>
+      </section>  
+      <aside class='review-image'>
+        
+@if(!empty($profile->image))
+        <img class='book-image' src="{{ asset('storage/images/'.$profile->image) }}">
+@else
+        <img class='book-image' src="{{ asset('images/dummy.jpeg') }}">
+@endif
+      </aside>
+    </div>
+    <form method='POST' action="{{ route('remove') }}" enctype="multipart/form-data">
+      @csrf
+        <input type='hidden' name='id' value="{{$items->id}}">
+        <input type="submit"  class='btn btn-danger btn-delete mb20' value="削除する">
+    </form>
+    <a href="{{ route('index') }}" class='btn btn-info btn-back mb20'>一覧へ戻る</a>
   </div>
+</div>
 @endsection

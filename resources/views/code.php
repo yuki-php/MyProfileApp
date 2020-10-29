@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <h1 class='pagetitle'>編集ページ</h1>
+  <h1 class='pagetitle'>削除ページ</h1>
   @if (count($errors) > 0)
           <div class="alert alert-danger">
               <ul>
@@ -14,7 +14,7 @@
     
   <div class="row justify-content-center container">
       <div class="col-md-10">
-      <form method='POST' action="{{ route('update') }}" enctype="multipart/form-data">
+      <form method='POST' action="{{ route('remove') }}" enctype="multipart/form-data">
           @csrf
           <div class="card">
               <div class="card-body">
@@ -31,10 +31,10 @@
                   <label for="file1">画像のアップロード</label>
                   <input type="file" id="file1" name='image' class="form-control-file">
                 </div>
-                <input type='submit' class='btn btn-success' value='更新する'>
+                <input type='submit' class='btn btn-danger' value='削除する'>
               </div>
           </div>
-      </form>
+        </form>
       </div>
   </div>
 @endsection
