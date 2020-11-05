@@ -1,1 +1,1 @@
-# MyPRofileApp
+# MyProfileApp
