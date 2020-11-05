@@ -5,7 +5,7 @@
 
 <img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/toppage.png">
 <p>レスポンシブ対応もしておりますので、スマホでも閲覧可能です。<p>
-<img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/responsive.png" width: 50%; height: 400px;>
+<img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/responsive.png" width: 50%; height: 40px;>
 
 実装した機能
 ・CRUD
