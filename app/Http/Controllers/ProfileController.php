@@ -91,7 +91,7 @@ class ProfileController extends Controller
     }
 
     public function search(Request $request)
-    {   
+    { 
        $profiles = Profile::where('title', 'like', "%{$request->input}%")->orwhere('content', 'like', "%{$request->input}%")->orderBy('created_at', 'DESC')->paginate(6);
        return view('index', compact('profiles'));
     }
