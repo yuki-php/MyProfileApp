@@ -81,7 +81,6 @@ class ProfileController extends Controller
     public function delete(Request $request)
     {   
         $items = Profile::find($request->id);
-        // dd($items);
         return view('del', compact('items'));
     }
 
@@ -91,4 +90,10 @@ class ProfileController extends Controller
         return redirect('/')->with('flash_message', '削除しました');
     }
 
+    public function search(Request $request)
+    { 
+       $profiles = Profile::where('title', 'like', "%{$request->input}%")->orwhere('content', 'like', "%{$request->input}%")->orderBy('created_at', 'DESC')->paginate(6);
+       return view('index', compact('profiles'));
+    }
+    
 }

@@ -21,3 +21,6 @@
 .btn-delete {
   margin-left: 1.25rem;
 }
+p {
+  white-space: pre-wrap;
+}

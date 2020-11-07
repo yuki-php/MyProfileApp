@@ -20,16 +20,21 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/utility.css') }}" rel="stylesheet">
     <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     @yield('css')
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                <img class='navbar-logo' src="{{ asset('images/logo.jpg') }}">
-                {{ config('app.name', 'MyProfileApp') }}
-                </a>
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <img class='navbar-logo' src="{{ asset('images/logo.jpg') }}">
+                    {{ config('app.name', 'MyProfileApp') }}
+                    </a>
+                <div class="btn-list-top d-none d-md-block">
+                    <a href="https://twitter.com/Engyk6?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @Engyk6</a>
+                    <iframe src="http://ghbtns.com/github-btn.html?user=yuki-php&type=follow&count=false" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+                </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -70,6 +75,12 @@
                                 </div>
                             </li>
                         @endguest
+                        <li>
+                            <div class="btn-class d-md-none mt-2">
+                            <a href="https://twitter.com/Engyk6?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @Engyk6</a>
+                            <iframe src="http://ghbtns.com/github-btn.html?user=yuki-php&type=follow&count=false" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
