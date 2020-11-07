@@ -1,12 +1,12 @@
 .image-wrapper {
   text-align: center;
 }
-.book-image {
+.profile-image {
   height: 150px;
   margin-bottom: 20px;
   object-fit: cover;
 }
-.book-title {
+.profile-title {
   height: 3.5em;
   overflow: hidden;
 }
@@ -23,4 +23,11 @@
 }
 .pagination {
   justify-content: center;
+}
+.search-box {
+  margin: 15px;
+  width: 100%;
+}
+.search-box form {
+  float: right;
 }

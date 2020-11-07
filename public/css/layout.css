@@ -2,6 +2,9 @@
   background-color: #393e46;
   color: #fff;
 }
+.top-title {
+  width: 30%;
+}
 .navbar-brand{
   font-family: fantasy;
 }

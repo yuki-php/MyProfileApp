@@ -71,8 +71,8 @@
     </div>
     <div class="sample-card">
         <div>
-            <h3>サンプル用アドレスを入力してください</h3>
-            <p>E-Mail Address : sampleaddress@sample.com</p>
+            <h4>サンプル用アドレスを入力してください</h3>
+            <p>E-mail Address : sampleaddress@sample.com</p>
             <p>Password : 20201101</p>
         </div>
     </div>

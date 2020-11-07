@@ -19,6 +19,9 @@ Auth::routes();
 Route::get('/' , 'ProfileController@index')->name('index');
 Route::get('/show/{id}', 'ProfileController@show')->name('show');
 
+Route::post('/search', 'ProfileController@search')->name('search');
+
+
 
 Route::group(['middleware' => 'auth'], function () {
 
