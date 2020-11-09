@@ -14,21 +14,21 @@ AWS（RDS）
 
 
 <img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/toppage2.png">
-<p>レスポンシブ対応もしておりますので、スマホでも閲覧可能です。<p>
-<p>SNSボタンもディスプレイサイズによって配置を変えています。</p>
+<p>レスポンシブ対応もしておりますので、スマホでも閲覧可能です。
+<p>SNSボタンもディスプレイサイズによって配置を変えています。
 <img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/responsive2.png" width=50% >
 
 ### 実装した機能
-<p>・CRUD<p>
-<p>・検索機能</p>
-<p>・ユーザー認証機能<p>
-<p>・ページネーション<p>
-<p>・フラッシュメッセージ<p>
+<p>・CRUD
+<p>・検索機能
+<p>・ユーザー認証機能
+<p>・ページネーション
+<p>・フラッシュメッセージ
 <p>SNSフォローボタン
-<p>・レスポンシブ対応<p>
-<p>・オリジナルドメイン取得<p>
+<p>・レスポンシブ対応
+<p>・オリジナルドメイン取得
 
 11/5 現在
 
-<p>ログイン機能も付けていますので、sampleアドレスでログイン後に、記事の編集や削除など可能です。<p>
+<p>ログイン機能も付けていますので、sampleアドレスでログイン後に、記事の編集や削除など可能です。
 <img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/sample-login.png"  >
