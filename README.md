@@ -28,7 +28,7 @@ AWS（RDS）
 <p>・レスポンシブ対応
 <p>・オリジナルドメイン取得
 
-11/5 現在
+11/9 現在
 
 <p>ログイン機能も付けていますので、sampleアドレスでログイン後に、記事の編集や削除など可能です。</p>
 <img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/sample-login.png"  >
