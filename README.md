@@ -15,7 +15,7 @@ AWS（RDS）
 
 <img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/toppage2.png">
 <p>レスポンシブ対応もしておりますので、スマホでも閲覧可能です。<p>
-<img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/responsive.png" width=50% >
+<img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/responsive2.png" width=50% >
 
 ### 実装した機能
 <p>・CRUD<p>
