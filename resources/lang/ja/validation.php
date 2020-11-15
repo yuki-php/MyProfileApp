@@ -99,6 +99,8 @@ return [
     'attributes' => [
       'title' => 'タイトル',
       'content' => '本文',
-      'image' => '画像'
+      'image' => '画像',
+      'name' => '名前',
+      'email' => 'メールアドレス'
     ],
 ];

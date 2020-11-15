@@ -6,7 +6,7 @@
 ・使用言語
 Laravel
 
-・本番環境
+・インフラ
 AWS（EC2）
 
 ・データベース
@@ -18,10 +18,12 @@ AWS（RDS）
 <img src="https://github.com/yuki-php/MyProfileApp/blob/main/public/images/responsive.png" width=50% >
 
 ### 実装した機能
+<p>・メール送信機能</p>
 <p>・CRUD<p>
 <p>・ユーザー認証機能<p>
 <p>・ページネーション<p>
 <p>・フラッシュメッセージ<p>
+<p>・セッション</p>
 <p>・レスポンシブ対応<p>
 <p>・オリジナルドメイン取得<p>
 
