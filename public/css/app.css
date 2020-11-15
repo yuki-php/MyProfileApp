@@ -4499,6 +4499,9 @@ input[type=button].btn-block {
   text-align: center;
 }
 
+.contact {
+  border-radius: 5px;
+}
 .tab-content > .tab-pane {
   display: none;
 }

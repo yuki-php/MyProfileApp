@@ -44,6 +44,9 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
+                        <li class="nav-item bg-info d-none d-md-block contact">
+                            <a href="{{ route('contact') }}" class="nav-link ">メールでお問い合わせ</a>
+                        </li>
                         <li class="nav-item">
                             <a href="{{ route('create') }}" class='nav-link'>記事を投稿</a>
                         </li>
@@ -75,12 +78,17 @@
                                 </div>
                             </li>
                         @endguest
-                        <li>
-                            <div class="btn-class d-md-none mt-2">
-                            <a href="https://twitter.com/Engyk6?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @Engyk6</a>
-                            <iframe src="http://ghbtns.com/github-btn.html?user=yuki-php&type=follow&count=false" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-                            </div>
-                        </li>
+                            <li>
+                                <div class="d-md-none">
+                                 <a href="{{ route('contact') }}" class="nav-link ">お問い合わせ</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn-class d-md-none mt-2">
+                                <a href="https://twitter.com/Engyk6?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @Engyk6</a>
+                                <iframe src="http://ghbtns.com/github-btn.html?user=yuki-php&type=follow&count=false" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+                                </div>
+                            </li>
                     </ul>
                 </div>
             </div>
